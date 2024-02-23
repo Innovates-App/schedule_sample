@@ -4,5 +4,10 @@ using my.bookshop as my from '../db/data-model';
 service CatalogService @(path: '/path') {
 
     entity Books as projection on my.Books;
-    function test() returns String
+
+    function test @(restrict: [{
+        grant: 'READ',
+        to   : 'jobscheduler'
+    }])() returns String
+
 }

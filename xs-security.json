@@ -1,12 +1,12 @@
 {
-  "xsappname": "schedulsample",
+  "xsappname": "schedul_sample",
   "tenant-mode": "dedicated",
   "scopes": [
     {
       "name": "$XSAPPNAME.jobscheduler",
       "description": "JobScheduler Scope",
       "grant-as-authority-to-apps": [
-        "XSSERVICENAME(jobscheduler)"
+        "$XSSERVICENAME(jobscheduler)"
       ]
     }
   ],
